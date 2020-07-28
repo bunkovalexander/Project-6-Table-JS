@@ -1,0 +1,124 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ffa3a2;
+  background: -webkit-linear-gradient(left, #ffa3a2, #bfffe6);
+  background: -moz-linear-gradient(left, #ffa3a2, #bfffe6);
+  background: linear-gradient(to right, #ffa3a2, #bfffe6);
+  color: #333;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.9vw;
+  line-height: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.table_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .table_box {
+    position: relative;
+    top: 30vh;
+    #table {
+      border-spacing: 5px 5px;
+      .btn {
+        height: 100%;
+        border: none;
+      }
+      th,
+      td {
+        // width: 5vw;
+        height: 3.1vw;
+        border: none;
+        font-weight: 700;
+        .box_btn {
+          width: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        input,
+        select {
+          font-size: 2.1vw;
+          border: 1px solid rgba($color: #999, $alpha: 0.2);
+          background-color: rgba($color: #fff, $alpha: 0.2);
+          height: 100%;
+          border-radius: 0.7vw;
+
+          width: 11vw;
+          text-align: center;
+          color: #333;
+
+          option {
+          }
+        }
+        input:focus,
+        select:focus {
+          background-color: rgba($color: #fff, $alpha: 0.6);
+          border: none;
+          list-style-type: none;
+          outline: none;
+        }
+        .quantity,
+        .price {
+          width: 15vw;
+        }
+        select {
+          font-size: 1.7vw;
+          width: 16vw;
+        }
+      }
+    }
+    .totalBox {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 20px;
+      label {
+        margin-right: 15px;
+      }
+      input#total {
+        color: #333;
+        height: 5vw;
+        border-radius: 8px;
+        border: none;
+        background-color: #ffa1a0;
+        outline: none;
+        padding-left: 10px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+button {
+  display: block;
+  width: 3.1vw;
+  font-size: 2vw;
+  background-color: #ff7d7b;
+  border-radius: 0.7vw;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  display: block;
+  width: 3.1vw;
+  background-color: #ff403d;
+}
+tr.row {
+  margin-bottom: 50px;
+}
+@import "media";

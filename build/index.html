@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>ActiveBox</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="table_wrap">
+      <div class="table_box">
+        <table id="table">
+          <tr id="tableHeader">
+            <th> </th>
+            <th> </th>
+            <th>Название</th>
+            <th>Категория</th>
+            <th>Единица</th>
+            <th>Количество</th>
+            <th>Стоимость</th>
+            <th>Сумма</th>
+            <th> </th>
+            <th> </th>
+          </tr>
+          <tr class="row">
+            <td class="box_btn">
+              <button class="btn delete">-</button>
+            </td>
+            <td class="box_btn">
+              <button class="btn create">+</button>
+            </td>
+            <td>
+              <input class="name" type="text" name="name" value="Томат"/>
+            </td>
+            <td>
+              <select name="type">
+                <option value="Выбрать">Выберите категорию</option>
+                <option value="Фрукты">Фрукты</option>
+                <option value="Овощи" checked="checked">Овощи</option>
+                <option value="Бытовая химия">Бытовая химия</option>
+                <option value="Товары для животных">Товары для животных</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" name="unit" value="кг"/>
+            </td>
+            <td>
+              <input class="quantity" type="number" name="quantity" value="5"/>
+            </td>
+            <td>
+              <input class="price" type="number" name="price" value="40"/>
+            </td>
+            <td>
+              <input class="result" type="number" name="result" value="200" disabled="disabled"/>
+            </td>
+            <td class="box_btn">
+              <button class="btn up">&uarr;	</button>
+            </td>
+            <td class="box_btn">
+              <button class="btn down">&darr;</button>
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="box_btn">
+              <button class="btn delete">-</button>
+            </td>
+            <td class="box_btn">
+              <button class="btn create">+</button>
+            </td>
+            <td>
+              <input class="name" type="text" name="name"/>
+            </td>
+            <td>
+              <select name="type">
+                <option value="Выбрать">Выберите категорию</option>
+                <option value="Фрукты">Фрукты</option>
+                <option value="Овощи">Овощи</option>
+                <option value="Бытовая химия">Бытовая химия</option>
+                <option value="Товары для животных">Товары для животных</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" name="unit"/>
+            </td>
+            <td>
+              <input class="quantity" type="number" name="quantity"/>
+            </td>
+            <td>
+              <input class="price" type="number" name="price"/>
+            </td>
+            <td>
+              <input class="result" type="number" name="result" disabled="disabled"/>
+            </td>
+            <td class="box_btn">
+              <button class="btn up">&uarr;	</button>
+            </td>
+            <td class="box_btn">
+              <button class="btn down">&darr;</button>
+            </td>
+          </tr>
+        </table>
+        <div class="totalBox">
+          <label class="totalLable" for="total">Итого:</label>
+          <input type="text" disabled="disabled" id="total"/>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

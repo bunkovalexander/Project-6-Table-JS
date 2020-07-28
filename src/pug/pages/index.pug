@@ -1,0 +1,98 @@
+//- include ./../mixins/_raw.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    title ActiveBox
+    link(rel="stylesheet" href="css/style.css")
+
+
+
+
+
+
+
+  body
+
+    .table_wrap
+      .table_box
+        table#table
+          tr#tableHeader
+            th 
+            th 
+            th Название
+            th Категория
+            th Единица
+            th Количество
+            th Стоимость
+            th Сумма
+            th 
+            th 
+          tr.row
+            td.box_btn
+              button.btn.delete -
+            td.box_btn
+              button.btn.create +
+            td
+              input.name(type="text" name="name" value='Томат')  
+            td
+              select(name="type")
+                option(value="Выбрать") Выберите категорию
+                option(value="Фрукты" ) Фрукты
+                option(value="Овощи" checked) Овощи
+                option(value="Бытовая химия") Бытовая химия
+                option(value="Товары для животных") Товары для животных
+
+            td
+              input(type="text" name="unit" value='кг')
+            td
+              input.quantity(type="number" name="quantity" value='5')
+            td
+              input.price(type="number" name="price" value='40')
+            td
+              input.result(type="number" name="result" value='200' disabled) 
+            td.box_btn
+              button.btn.up &uarr;	
+            td.box_btn
+              button.btn.down &darr;
+          tr.row
+            td.box_btn
+              button.btn.delete -
+            td.box_btn
+              button.btn.create +
+            td
+              input.name(type="text" name="name" )
+            td
+              select(name="type")
+                option(value="Выбрать") Выберите категорию
+                option(value="Фрукты") Фрукты
+                option(value="Овощи") Овощи
+                option(value="Бытовая химия") Бытовая химия
+                option(value="Товары для животных") Товары для животных
+
+            td
+              input(type="text" name="unit")
+            td
+              input.quantity(type="number" name="quantity")
+            td
+              input.price(type="number" name="price")
+            td
+              input.result(type="number" name="result" disabled) 
+            td.box_btn
+              button.btn.up &uarr;	
+            td.box_btn
+              button.btn.down &darr;
+        .totalBox
+          label(for="total").totalLable Итого:
+          input(type="text" disabled)#total
+
+
+
+
+
+
+    script(src="./js/main.js")
+
